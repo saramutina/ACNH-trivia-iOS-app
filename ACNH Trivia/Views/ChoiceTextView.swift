@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ChoiceTextView: View {
     let choiceText: String
-    let accentColor = Color(red: 129/255, green: 241/255, blue: 247/255)
     
     var body: some View {
         Text(choiceText)
@@ -19,7 +18,7 @@ struct ChoiceTextView: View {
             .padding()
             .overlay(
                 RoundedRectangle(cornerRadius: 25)
-                    .stroke(accentColor, lineWidth: 7))
+                    .stroke(GameColor.accent, lineWidth: 7))
             .background(Color.white)
             .cornerRadius(25)
     }

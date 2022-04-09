@@ -11,7 +11,7 @@ import SwiftUI
 struct ACNH_TriviaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
         }
     }
 }

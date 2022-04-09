@@ -7,14 +7,11 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GameView: View {
     
     let question = Question(questionText: "When was the first Animal Crossing game released?", possibleAnswers: ["1978", "1990", "2001", "2005"], correctAnswerIndex: 2)
     
-    @State var mainColor = Color(red: 157/255, green: 255/255, blue: 176/255)
-    let accentColor = Color(red: 129/255, green: 241/255, blue: 247/255)
-    let textColor = Color(red: 166/255, green: 111/255, blue: 33/255)
-    
+    @State var mainColor = GameColor.main
     
     var body: some View {
         ZStack {
@@ -44,7 +41,7 @@ struct ContentView: View {
                     ForEach(0..<question.possibleAnswers.count, id: \.self) { answerIndex in
                         Button(action: {
                             print("Tapped on Choice \(question.possibleAnswers[answerIndex])")
-                            mainColor = answerIndex == question.correctAnswerIndex ? .green : .red
+                            mainColor = answerIndex == question.correctAnswerIndex ? GameColor.correctGuess : GameColor.incorrectGuess
                         }) {
                             ChoiceTextView(choiceText: question.possibleAnswers[answerIndex])
                         }
@@ -52,12 +49,12 @@ struct ContentView: View {
                 }
             }
         }
-        .foregroundColor(textColor)
+        .foregroundColor(GameColor.text)
     }
     
-    struct ContentView_Previews: PreviewProvider {
+    struct GameView_Previews: PreviewProvider {
         static var previews: some View {
-            ContentView()
+            GameView()
                 .previewDevice("iPhone 13 Pro Max")
         }
     }

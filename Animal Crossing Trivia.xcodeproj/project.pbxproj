@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		22D2D53427EE3746002E53C2 /* ACNH_TriviaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D2D53327EE3746002E53C2 /* ACNH_TriviaApp.swift */; };
-		22D2D53627EE3746002E53C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D2D53527EE3746002E53C2 /* ContentView.swift */; };
+		22D2D53627EE3746002E53C2 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D2D53527EE3746002E53C2 /* GameView.swift */; };
 		22D2D53827EE3748002E53C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D2D53727EE3748002E53C2 /* Assets.xcassets */; };
 		22D2D53B27EE3748002E53C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D2D53A27EE3748002E53C2 /* Preview Assets.xcassets */; };
+		37712ECD2801CCC100520E9A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37712ECC2801CCC100520E9A /* WelcomeView.swift */; };
+		37712ECF2801D2C900520E9A /* GameColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37712ECE2801D2C900520E9A /* GameColor.swift */; };
 		3797189A27F79E0600508F7A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797189927F79E0600508F7A /* Question.swift */; };
 		3797189C27F7A0EB00508F7A /* ChoiceTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797189B27F7A0EB00508F7A /* ChoiceTextView.swift */; };
 		3797189E27FC44C700508F7A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797189D27FC44C700508F7A /* Game.swift */; };
@@ -19,9 +21,11 @@
 /* Begin PBXFileReference section */
 		22D2D53027EE3746002E53C2 /* ACNH Trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACNH Trivia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D2D53327EE3746002E53C2 /* ACNH_TriviaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACNH_TriviaApp.swift; sourceTree = "<group>"; };
-		22D2D53527EE3746002E53C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		22D2D53527EE3746002E53C2 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		22D2D53727EE3748002E53C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22D2D53A27EE3748002E53C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37712ECC2801CCC100520E9A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		37712ECE2801D2C900520E9A /* GameColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameColor.swift; sourceTree = "<group>"; };
 		3797189927F79E0600508F7A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		3797189B27F7A0EB00508F7A /* ChoiceTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTextView.swift; sourceTree = "<group>"; };
 		3797189D27FC44C700508F7A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
@@ -86,8 +90,10 @@
 		379718A027FC453D00508F7A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				22D2D53527EE3746002E53C2 /* ContentView.swift */,
+				22D2D53527EE3746002E53C2 /* GameView.swift */,
 				3797189B27F7A0EB00508F7A /* ChoiceTextView.swift */,
+				37712ECC2801CCC100520E9A /* WelcomeView.swift */,
+				37712ECE2801D2C900520E9A /* GameColor.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,8 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3797189A27F79E0600508F7A /* Question.swift in Sources */,
+				37712ECD2801CCC100520E9A /* WelcomeView.swift in Sources */,
 				3797189E27FC44C700508F7A /* Game.swift in Sources */,
-				22D2D53627EE3746002E53C2 /* ContentView.swift in Sources */,
+				22D2D53627EE3746002E53C2 /* GameView.swift in Sources */,
+				37712ECF2801D2C900520E9A /* GameColor.swift in Sources */,
 				3797189C27F7A0EB00508F7A /* ChoiceTextView.swift in Sources */,
 				22D2D53427EE3746002E53C2 /* ACNH_TriviaApp.swift in Sources */,
 			);

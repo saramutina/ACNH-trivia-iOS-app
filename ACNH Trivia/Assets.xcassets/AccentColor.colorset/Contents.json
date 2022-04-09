@@ -1,10 +1,6 @@
 {
   "colors" : [
     {
-      "color" : {
-        "platform" : "ios",
-        "reference" : "systemYellowColor"
-      },
       "idiom" : "universal"
     },
     {
@@ -14,10 +10,6 @@
           "value" : "light"
         }
       ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "systemYellowColor"
-      },
       "idiom" : "universal"
     },
     {
@@ -27,15 +19,6 @@
           "value" : "dark"
         }
       ],
-      "color" : {
-        "color-space" : "display-p3",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0",
-          "green" : "130",
-          "red" : "231"
-        }
-      },
       "idiom" : "universal"
     }
   ],
