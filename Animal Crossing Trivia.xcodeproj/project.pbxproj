@@ -13,6 +13,8 @@
 		22D2D53B27EE3748002E53C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D2D53A27EE3748002E53C2 /* Preview Assets.xcassets */; };
 		37712ECD2801CCC100520E9A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37712ECC2801CCC100520E9A /* WelcomeView.swift */; };
 		37712ECF2801D2C900520E9A /* GameColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37712ECE2801D2C900520E9A /* GameColor.swift */; };
+		37712ED62804559000520E9A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37712ED52804559000520E9A /* GameViewModel.swift */; };
+		37712ED828045F3900520E9A /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37712ED728045F3900520E9A /* QuestionView.swift */; };
 		3797189A27F79E0600508F7A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797189927F79E0600508F7A /* Question.swift */; };
 		3797189C27F7A0EB00508F7A /* ChoiceTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797189B27F7A0EB00508F7A /* ChoiceTextView.swift */; };
 		3797189E27FC44C700508F7A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3797189D27FC44C700508F7A /* Game.swift */; };
@@ -26,6 +28,8 @@
 		22D2D53A27EE3748002E53C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		37712ECC2801CCC100520E9A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		37712ECE2801D2C900520E9A /* GameColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameColor.swift; sourceTree = "<group>"; };
+		37712ED52804559000520E9A /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		37712ED728045F3900520E9A /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		3797189927F79E0600508F7A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		3797189B27F7A0EB00508F7A /* ChoiceTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTextView.swift; sourceTree = "<group>"; };
 		3797189D27FC44C700508F7A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 		22D2D53227EE3746002E53C2 /* ACNH Trivia */ = {
 			isa = PBXGroup;
 			children = (
+				37712ED0280388CA00520E9A /* ViewModel */,
 				379718A027FC453D00508F7A /* Views */,
 				3797189F27FC450D00508F7A /* Models */,
 				22D2D53327EE3746002E53C2 /* ACNH_TriviaApp.swift */,
@@ -76,6 +81,14 @@
 				22D2D53A27EE3748002E53C2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		37712ED0280388CA00520E9A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				37712ED52804559000520E9A /* GameViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		3797189F27FC450D00508F7A /* Models */ = {
@@ -94,6 +107,7 @@
 				3797189B27F7A0EB00508F7A /* ChoiceTextView.swift */,
 				37712ECC2801CCC100520E9A /* WelcomeView.swift */,
 				37712ECE2801D2C900520E9A /* GameColor.swift */,
+				37712ED728045F3900520E9A /* QuestionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,8 +186,10 @@
 				37712ECD2801CCC100520E9A /* WelcomeView.swift in Sources */,
 				3797189E27FC44C700508F7A /* Game.swift in Sources */,
 				22D2D53627EE3746002E53C2 /* GameView.swift in Sources */,
+				37712ED62804559000520E9A /* GameViewModel.swift in Sources */,
 				37712ECF2801D2C900520E9A /* GameColor.swift in Sources */,
 				3797189C27F7A0EB00508F7A /* ChoiceTextView.swift in Sources */,
+				37712ED828045F3900520E9A /* QuestionView.swift in Sources */,
 				22D2D53427EE3746002E53C2 /* ACNH_TriviaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
