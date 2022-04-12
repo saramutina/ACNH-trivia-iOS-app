@@ -19,6 +19,12 @@ struct GameView: View {
         .foregroundColor(GameColor.text)
         .navigationBarHidden(true)
         .environmentObject(viewModel)
+        .background(
+            NavigationLink(
+                destination: ScoreView(viewModel: ScoreViewModel(correctGuesses: viewModel.correctGuesses, incorrectGuesses: viewModel.incorrectGuesses)),
+                isActive: .constant(viewModel.gameIsOver),
+                label: {EmptyView ()})
+        )
     }
     
     struct GameView_Previews: PreviewProvider {
