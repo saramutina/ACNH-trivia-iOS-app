@@ -12,7 +12,7 @@ struct Game {
     private(set) var currentQuestionIndex = 0
     private(set) var guesses = [Question: Int]() // question : index of the answered guess
     private(set) var isOver = false
-    private let questions = Question.allQuestions.shuffled()
+    private let questions = Question.allQuestions.prefix(10).shuffled()
     
     // Computed properties:
     var numberOfQuestions: Int {
