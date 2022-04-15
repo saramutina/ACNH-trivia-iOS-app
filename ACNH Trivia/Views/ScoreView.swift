@@ -36,14 +36,7 @@ struct ScoreView: View {
                 NavigationLink(
                     destination: WelcomeView(),
                     label: {
-                        HStack{
-                            Spacer()
-                            Text("Re-take Quiz")
-                                .font(.title)
-                                .bold()
-                                .padding()
-                            Spacer()
-                        } .background(GameColor.accent)
+                        BottomTextView(text: "Re-take Quiz!")
                     }
                 )
             }
@@ -56,6 +49,6 @@ struct ScoreView: View {
 
 struct ScoreView_Previews: PreviewProvider {
     static var previews: some View {
-        ScoreView(viewModel: ScoreViewModel(correctGuesses: 7, incorrectGuesses: 6))
+        ScoreView(viewModel: ScoreViewModel(correctGuesses: 9, incorrectGuesses: 1))
     }
 }

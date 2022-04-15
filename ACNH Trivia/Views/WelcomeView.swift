@@ -14,13 +14,13 @@ struct WelcomeView: View {
             ZStack {
                 GameColor.main.ignoresSafeArea()
                 VStack{
-                    Spacer()
+                    VStack {
                         Text("""
-Test your Animal Crossing knowlege!
-
-Select the correct answers to the following questions.
-""")
-                        .font(.title)
+                        Test your Animal Crossing knowlege!
+                        
+                        Select the correct answers to the following questions.
+                        """)
+                        .font(.largeTitle)
                         .multilineTextAlignment(.center)
                         .padding(20)
                         .overlay(
@@ -28,28 +28,15 @@ Select the correct answers to the following questions.
                                 .stroke(GameColor.accent, lineWidth: 7))
                         .background(Color.white)
                         .cornerRadius(25)
+                    }.padding(EdgeInsets(top: 40, leading: 10, bottom: 0, trailing: 10))
                     Spacer()
                     NavigationLink(
                         destination: GameView(),
                         label: {
-                            HStack {
-                                Spacer()
-                                Text("Let's go!")
-                                    .font(.title)
-                                    .bold()
-                                    .padding()
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 25)
-                                            .stroke(GameColor.accent, lineWidth: 7))
-                                    .background(Color.white)
-                                    .cornerRadius(25)
-                                Spacer()
-                            }
+                            BottomTextView(text: "Let's go!")
                         })
-                    Spacer()
                 }
                 .foregroundColor(GameColor.text)
-                .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
             }
         }
         .navigationBarHidden(true)

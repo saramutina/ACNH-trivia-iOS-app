@@ -59,14 +59,7 @@ struct QuestionView: View {
                 Button(action: {
                     viewModel.displayNextScreen()
                 }) {
-                    HStack{
-                        Spacer()
-                        Text("Next")
-                            .font(.title)
-                            .bold()
-                            .padding()
-                        Spacer()
-                    } .background(GameColor.accent)
+                    BottomTextView(text: "Next")
                 }
             }
         }
