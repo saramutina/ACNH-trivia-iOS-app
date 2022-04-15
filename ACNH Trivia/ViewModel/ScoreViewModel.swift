@@ -16,16 +16,29 @@ struct ScoreViewModel {
     }
     
     var emojiForPercentage: String {
-        if percentage == 100 {
-            return "⭐️"
-        } else if percentage >= 80 {
+        switch percentage {
+        case 100:
+            return "🦄"
+        case 90:
             return "🌈"
-        } else if percentage >= 60 {
-            return "🌸"
-        } else if percentage >= 40 {
+        case 80:
+            return "☀️"
+        case 70:
+            return "✨"
+        case 60:
             return "🍄"
-        } else {
+        case 50:
+            return "🌸"
+        case 40:
+            return "🌷"
+        case 30:
             return "🌱"
+        case 20:
+            return "🍁"
+        case 10:
+            return "🫧"
+        default:
+            return "✨"
         }
     }
 }

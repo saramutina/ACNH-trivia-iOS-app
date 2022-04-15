@@ -16,26 +16,33 @@ struct QuestionView: View {
     
     var body: some View {
         VStack {
-            HStack() {
-                ZStack() {
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(Color.white)
-                        .frame(width: 100, height: 40)
+            VStack {
+                HStack() {
                     Text(questionProgress)
                         .font(.title2)
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 25)
+                                .stroke(GameColor.accent, lineWidth: 0)
+                        )
+                        .background(Color.white)
+                        .cornerRadius(25)
+                    Spacer()
+                        .frame(width: 255)
                 }
-                Spacer()
-                    .frame(width: 255)
-            }
-            ZStack () {
-                RoundedRectangle(cornerRadius: 50)
-                    .fill(Color.white)
-                    .frame(width: 400, height: 220)
                 Text(question.questionText)
                     .padding(30)
                     .font(.largeTitle)
-            }
-            Spacer()
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 40)
+                            .stroke(GameColor.accent, lineWidth: 0)
+                    )
+                    .multilineTextAlignment(.center)
+                    .background(Color.white)
+                    .cornerRadius(40)
+                Spacer()
+            }.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+            
             VStack(alignment: .center, spacing: 15) {
                 ForEach(0..<question.possibleAnswers.count, id: \.self) { answerIndex in
                     Button(action: {
@@ -63,6 +70,7 @@ struct QuestionView: View {
                 }
             }
         }
+        .foregroundColor(GameColor.text)
     }
 }
 

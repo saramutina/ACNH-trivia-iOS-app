@@ -15,21 +15,19 @@ struct WelcomeView: View {
                 GameColor.main.ignoresSafeArea()
                 VStack{
                     Spacer()
-                    VStack(alignment: .leading, spacing: 0) {
                         Text("""
-                             Test your Animal Crossing knowlege!
-                             
-                             Select the correct answers to the following questions.
-                             """)
-                        .font(.largeTitle)
+Test your Animal Crossing knowlege!
+
+Select the correct answers to the following questions.
+""")
+                        .font(.title)
                         .multilineTextAlignment(.center)
-                        .padding(40)
+                        .padding(20)
                         .overlay(
                             RoundedRectangle(cornerRadius: 25)
                                 .stroke(GameColor.accent, lineWidth: 7))
                         .background(Color.white)
                         .cornerRadius(25)
-                    }
                     Spacer()
                     NavigationLink(
                         destination: GameView(),
@@ -51,8 +49,10 @@ struct WelcomeView: View {
                     Spacer()
                 }
                 .foregroundColor(GameColor.text)
+                .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
             }
         }
+        .navigationBarHidden(true)
     }
 }
 

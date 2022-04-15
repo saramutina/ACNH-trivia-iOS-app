@@ -34,7 +34,7 @@ struct ScoreView: View {
                 
                 Spacer()
                 NavigationLink(
-                    destination: GameView(),
+                    destination: WelcomeView(),
                     label: {
                         HStack{
                             Spacer()
